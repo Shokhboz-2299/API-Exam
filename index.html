@@ -14,26 +14,26 @@
 <body>
   <header>
     <div class="container-fluid">
-      <h1 class="text-center mt-3">API-Exam</h1>
+      <h1 class="text-center p-3 bg-success text-white">API-Exam</h1>
     </div>
   </header>
 
   <main class="container-fluid">
     <section class="row">
-      <div class="col-4">
-        <h2 class="text-center">Users</h2>
+      <div class="col-4 ">
+        <h2 class="text-center bg-info">Users</h2>
            <ul class="list-unstyled js-user-list"></ul>
       </div>
 
       <div class="col-4">
-        <h2 class="text-center">Posts</h2>
-        <ul class="list-unstyled"></ul>
+        <h2 class="text-center bg-info">Posts</h2>
+        <ul class="list-unstyled js-post-list"></ul>
 
       </div>
 
       <div class="col-4">
-        <h2 class="text-center">Comments</h2>
-        <ul class="list-unstyled"></ul>
+        <h2 class="text-center bg-info">Comments</h2>
+        <ul class="list-unstyled js-comment-list"></ul>
 
       </div>
 
@@ -41,13 +41,30 @@
   </main>
 
   <template id="user-templete-js">
-    <li class="user-item card mb-4">
-      <button class="btn btn-link text-decoration-none full-name" type="button"></button>
-      <h4 class="user-name"></h4>
-      <div><a class="email-address text-decoration-none"></a></div>
-      <p><a class="phone-number text-decoration-none"></a></p>
+    <li class="user-item card p-3 mb-4">
+      <h3 class="full-name"></h3>
+      <div>UserName: <span class="user-name"></h4></span>
       
-      
+      <div>Email: <a class="email-address text-decoration-none"></a></div>
+      <p>tel: <a class="phone-number text-decoration-none"></a></p>
+      <button class="btn btn-secondary btn-posts-js" type="submit">Show Posts</button>
+    </li>
+
+  </template>
+
+  <template id="post-templete-js">
+    <li class="post-item card p-3 mb-4">
+      <h3 class="post-title"></h3>
+      <p class="post-body"></p>
+      <button class="btn btn-commend-js btn-secondary">Show commend</button>
+    </li>
+  </template>
+
+  <template id="comment-templete-js">
+    <li class="comment-item card p-3 mb-4">
+      <h3 class="comment-title"></h3>
+      <div class="comment-email-wrapper">Email Address: <a class="comment-email"></a></div>
+      <p class="comment-body"></p>
     </li>
   </template>
 

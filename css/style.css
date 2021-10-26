@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+  /* font-size: 24px; */
+  background-color: #ddd;
+}
+
+.user-item {
+  background-color: rgb(31, 233, 189);
+}
+
+.post-item {
+  background-color: rgb(13, 107, 196);
+}
+
+.comment-item {
+  background-color: rgb(230, 136, 28);
+}
